@@ -6,11 +6,11 @@ class ExampleActor extends Actor {
     //Counter Examples
     //==============
 
-    public counter: i64 = 0;
+    public counter: i32 = 0;
 
     //@ts-ignore
     @update()
-    set(value: i64): void {
+    set(value: i32): void {
         this.counter = value;
     }
 
@@ -28,7 +28,7 @@ class ExampleActor extends Actor {
 
     //@ts-ignore
     @query()
-    get_value(): i64 {
+    get_value(): i32 {
         API.print("Counter Count: " + this.counter.toString());
         return this.counter;
     }
