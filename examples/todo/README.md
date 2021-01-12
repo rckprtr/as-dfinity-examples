@@ -5,46 +5,47 @@ This is an experimental project to evaluate how AssemblyScript could be used as 
 
 ## Counter Example
 
-1.  [WABT](https://github.com/WebAssembly/wabt) is needed to parse WAT files exported by the build using wat2wasm
+1. [WABT](https://github.com/WebAssembly/wabt) is needed to parse WAT files exported by the build using wat2wasm
 
-```bash
-brew install wabt
-```
+    ```bash
+    brew install wabt
+    ```
 
-1.  Next install the assemblyscript & cdk dependcies
+1. Next install the assemblyscript & cdk dependcies
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 1.  The @cdk-as/cli is required for building the CDK
 
-```bash
-npm install @cdk-as/cli -g  
-```
+    ```bash
+    npm install @cdk-as/cli -g  
+    ```
 
 1.  Start DFINITY in a new terminal
 
-```bash
-dfx start
-```
+    ```bash
+    dfx start
+    ```
 
 1. Build the project
 
-```bash
-dfx build
-```
+    ```bash
+    dfx build
+    ```
 
 1. Deploy the project
 
-```bash
-dfx canister install todo
-```
+    ```bash
+    dfx canister install todo
+    ```
 
-You should see in your DFINITY terminal
-```bash
-[Canister canid] [init] Hello DFINITY from AssemblyScript
-```
+1. You should see in your DFINITY terminal
+
+    ```bash
+    [Canister canid] [init] Hello DFINITY from AssemblyScript
+    ```
 
 
 ## Commands
