@@ -3,7 +3,7 @@
 This is an experimental project to evaluate how AssemblyScript could be used as a CDK and should not be used for any production purposes.
 
 
-## Counter Example
+## TODO Example
 
 1. [WABT](https://github.com/WebAssembly/wabt) is needed to parse WAT files exported by the build using wat2wasm
 
