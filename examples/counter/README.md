@@ -26,9 +26,15 @@ Start DFINITY in a new terminal
 dfx start
 ```
 
-Deploy the canister
+build the canister
 ```
-dfx deploy
+dfx build
+```
+
+Deploy the canister
+
+```bash
+dfx canister install todo
 ```
 
 You should see in your DFINITY terminal
