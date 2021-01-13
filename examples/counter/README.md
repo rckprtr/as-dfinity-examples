@@ -34,7 +34,7 @@ dfx build
 Deploy the canister
 
 ```bash
-dfx canister install todo
+dfx canister install counter
 ```
 
 You should see in your DFINITY terminal
