@@ -13,8 +13,6 @@ To get started:
     sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"
     ```
 
-1. Select a language—for example, `c` or `motoko`—to explore the examples available in the language of your choice.
-
 1. Clone the repository to download the `examples` repo to your local workspace.
 
 1. Open the project folder for the example you want to use.
