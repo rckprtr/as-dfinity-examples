@@ -3,7 +3,7 @@
 This is an experimental project to evaluate how AssemblyScript could be used as a CDK and should not be used for any production purposes.
 
 
-## TODO Example
+## Phonebook Example
 
 1. [WABT](https://github.com/WebAssembly/wabt) is needed to parse WAT files exported by the build using wat2wasm
 
@@ -39,7 +39,12 @@ This is an experimental project to evaluate how AssemblyScript could be used as 
 1. Deploy the project
 
     ```bash
-    dfx canister install todo
+    dfx canister install --all
+    ```
+
+1. Take note of the canister id for the assets
+     ```bash
+    Installing code for canister phonebook_assets, with canister_id cxeji-wacaa-aaaaa-aaaaa-aaaaa-aaaaa-a
     ```
 
 1. You should see in your DFINITY terminal
@@ -48,28 +53,7 @@ This is an experimental project to evaluate how AssemblyScript could be used as 
     [Canister canid] [init] Hello DFINITY from AssemblyScript
     ```
 
-
-## Commands
-
-
-Add some Todos
-```
-dfx canister call todo addTodo '("Create a project")'
-dfx canister call todo addTodo '("Build the project")'
-dfx canister call todo addTodo '("Deploy the project")'
-```
-
-Show the todos in the DFINITY teriminal
-```
-dfx canister call todo showTodos
-```
-
-Complete a todos
-```
-dfx canister call todo completeTodo '(1)'
-```
-
-List the todos
-```
-dfx canister call getTodos 
-```
+1. Open your browser to the URL with the canister_id of the assets
+    ```bash
+    http://localhost:8000/?canisterId=cxeji-wacaa-aaaaa-aaaaa-aaaaa-aaaaa-a
+    ```

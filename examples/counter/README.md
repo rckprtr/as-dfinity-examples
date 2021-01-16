@@ -28,6 +28,7 @@ dfx start
 
 build the canister
 ```
+dfx canister create --all
 dfx build
 ```
 

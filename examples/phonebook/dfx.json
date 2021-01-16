@@ -1,0 +1,40 @@
+{
+    "canisters": {
+        "phonebook": {
+            "main": "phonebook",
+            "type": "custom",
+            "candid": "build/phonebook.did",
+            "wasm": "build/phonebook.wasm",
+            "build": "cdk-as build"
+        },
+        "phonebook_assets": {
+          "dependencies": [
+            "phonebook"
+          ],
+          "frontend": {
+            "entrypoint": "web/index.jsx"
+          },
+          "source":  ["build/phonebook_assets/assets/"],
+          "type": "assets"
+        }
+    },
+    "defaults": {
+        "build": {
+          "packtool": ""
+        }
+      },
+      "dfx": "0.6.16",
+      "networks": {
+        "ic": {
+          "providers": [
+            "https://gw.dfinity.network"
+          ],
+          "type": "persistent"
+        },
+        "local": {
+          "bind": "127.0.0.1:8000",
+          "type": "ephemeral"
+        }
+      },
+      "version": 1
+}
