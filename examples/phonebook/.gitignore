@@ -126,6 +126,7 @@ tools/didc
 
 .dfx/
 build/*
+!build/.keep
 
 # tests
 assembly/lib/__tests__/**/*.map
