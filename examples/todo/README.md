@@ -5,13 +5,7 @@ This is an experimental project to evaluate how AssemblyScript could be used as 
 
 ## TODO Example
 
-1. [WABT](https://github.com/WebAssembly/wabt) is needed to parse WAT files exported by the build using wat2wasm
-
-    ```bash
-    brew install wabt
-    ```
-
-1. Next install the assemblyscript & cdk dependcies
+1. Install the assemblyscript & cdk dependcies
 
     ```bash
     npm install
@@ -71,5 +65,5 @@ dfx canister call todo completeTodo '(1)'
 
 List the todos
 ```
-dfx canister call getTodos 
+dfx canister call todo getTodos 
 ```

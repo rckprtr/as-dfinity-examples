@@ -5,13 +5,7 @@ This is an experimental project to evaluate how AssemblyScript could be used as 
 
 ## Counter Example
 
-[WABT](https://github.com/WebAssembly/wabt) is needed to parse WAT files exported by the build using wat2wasm
-
-```
-brew install wabt
-```
-
-Next install the assemblyscript & cdk dependcies
+Install the assemblyscript & cdk dependcies
 ```
 npm install
 ```
